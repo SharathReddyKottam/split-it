@@ -23,7 +23,7 @@ visualize spending patterns, and settle debts — all from a clean interactive d
 
 ### Core
 - 👥 **Groups** — Create groups and manage members
-- 🧾 **Expenses** — Add expenses with flexible split options
+- 🧾 **Expenses** — Add expenses with flexible split options (equal, percentage, exact)
 - ✅ **Member Selection** — Tick only the people involved in each transaction
 - ⚖️ **Balances** — See exactly who owes who across all expenses
 - ✅ **Settle Up** — Mark full or partial payments as settled
@@ -36,7 +36,10 @@ visualize spending patterns, and settle debts — all from a clean interactive d
 
 ### Productivity
 - 🔍 **Search & Filter** — Find any expense by name, date, amount or category
+- ✏️ **Edit & Delete** — Fix mistakes or remove expenses
 - 📥 **Import Excel** — Upload bank or card statements and auto-import transactions
+- 📄 **Export PDF** — Download a formatted expense report as PDF
+- 📊 **Export Excel** — Download a multi-sheet formatted Excel report
 - ⬇️ **Export CSV** — Download reports and filtered results
 
 ---
@@ -52,6 +55,8 @@ visualize spending patterns, and settle debts — all from a clean interactive d
 | Calplot | Calendar heatmap |
 | Matplotlib | Chart rendering |
 | OpenPyXL | Excel file handling |
+| ReportLab | PDF generation |
+| XlsxWriter | Excel formatting |
 
 ---
 
@@ -97,7 +102,10 @@ split-it/
 │   ├── 7_Leaderboard.py        # Rankings & stats
 │   ├── 8_Heatmap.py            # Calendar heatmap
 │   ├── 9_Search_Filter.py      # Search & filter
-│   └── 10_Import_Excel.py      # Import from Excel
+│   ├── 10_Import_Excel.py      # Import from Excel
+│   ├── 11_Edit_Delete.py       # Edit & delete expenses
+│   ├── 12_Export_PDF.py        # Export to PDF
+│   └── 13_Export_Excel.py      # Export to Excel
 │
 ├── utils/
 │   ├── file_helpers.py         # CSV read/write functions
@@ -122,7 +130,9 @@ split-it/
 3. **Check Balances** — Go to Balances to see who owes who
 4. **Settle Up** — Go to Settle Up and click Settle next to any debt
 5. **Import from Excel** — Go to Import Excel, upload your bank statement and auto-import
-6. **Explore Analytics** — Visit Dashboard, Monthly Report, Leaderboard and Heatmap
+6. **Edit or Delete** — Go to Edit & Delete to fix any mistakes
+7. **Export Reports** — Download PDF or Excel reports for any group
+8. **Explore Analytics** — Visit Dashboard, Monthly Report, Leaderboard and Heatmap
 
 ---
 
@@ -141,6 +151,9 @@ split-it/
 | 🗓️ Heatmap | Calendar spending view |
 | 🔍 Search & Filter | Find any expense |
 | 📥 Import Excel | Upload bank statements |
+| ✏️ Edit & Delete | Fix or remove expenses |
+| 📄 Export PDF | Download PDF report |
+| 📊 Export Excel | Download Excel report |
 
 ---
 
@@ -155,18 +168,6 @@ split-it/
 ## 📄 License
 
 MIT License — feel free to use, modify and distribute!
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Edit & Delete expenses
-- [ ] Export to PDF
-- [ ] Export to Excel
-- [ ] Dark / Light mode toggle
-- [ ] Recurring expenses
-- [ ] Currency support
-- [ ] Data backup & restore
 
 ---
 
