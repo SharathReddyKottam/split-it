@@ -1,5 +1,6 @@
 # 💸 Split It
 
+🌐 **Live Demo:** [split-it.streamlit.app](https://split-it.streamlit.app)
 > Split bills, track spending and settle debts — built with Python, Streamlit & Pandas
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square)
